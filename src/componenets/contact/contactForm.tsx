@@ -61,7 +61,7 @@ const ContactForm = () => {
                 Your Message
               </label>
               <textarea
-                rows="5"
+                rows={5}
                 placeholder="Write your message"
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
               ></textarea>
