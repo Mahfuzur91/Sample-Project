@@ -8,8 +8,7 @@ const AboutSection = () => {
           {/* Left Side */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
-              alt="Profile"
+              src="https://i.ibb.co/nqgqJ72p/bb-photo.jpg"
               className="rounded-2xl shadow-lg w-full"
             />
           </div>
