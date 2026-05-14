@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-
+import logo from "../../../public/assets/my pro.jpeg";
+import Image from "next/image";
 function Navbar() {
   return (
-    <div className="max-lg:collapse bg-base-200  shadow-sm w-full rounded-md">
+    <div className="max-lg:collapse bg-base-200 text-red-800  shadow-sm w-full rounded-md">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
@@ -28,7 +29,12 @@ function Navbar() {
               />
             </svg>
           </label>
-          <button className="btn btn-ghost text-xl">Mahfuzur Rahman</button>
+          {/* <button className="btn btn-ghost text-3xl">
+            Mahfuzur <span className="text-[#284C73]">Rahman</span>
+          </button> */}
+          <div>
+            <Image src={logo} alt="Image Unavailable" width={120}></Image>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -44,6 +50,9 @@ function Navbar() {
             </li>
             <li>
               <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link href="/projects">My Projects</Link>
             </li>
           </ul>
         </div>
