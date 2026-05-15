@@ -5,7 +5,7 @@ import logo from "../../../public/assets/my pro.jpeg";
 import Image from "next/image";
 function Navbar() {
   return (
-    <div className="max-lg:collapse bg-base-200 text-red-800  shadow-sm w-full rounded-md">
+    <div className="max-lg:collapse bg-base-600 text-red-800  shadow-sm w-full rounded-md">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
@@ -53,6 +53,9 @@ function Navbar() {
             </li>
             <li>
               <Link href="/projects">My Projects</Link>
+            </li>
+            <li>
+              <Link href="/myPhotography">My Photography</Link>
             </li>
           </ul>
         </div>

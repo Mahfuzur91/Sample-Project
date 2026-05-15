@@ -3,6 +3,7 @@
 import AboutSection from "../componenets/home/aboutSection";
 import Banner from "../componenets/home/banner";
 import Skills from "../componenets/home/Skills/skills";
+import MyPhotography from "../componenets/myPhotography/myPhotography";
 import Footer from "../componenets/shared/footer";
 import Navbar from "../componenets/shared/navbar";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner></Banner>
       <AboutSection></AboutSection>
       <Skills></Skills>
+      <MyPhotography></MyPhotography>
       <Footer></Footer>
     </>
   );
