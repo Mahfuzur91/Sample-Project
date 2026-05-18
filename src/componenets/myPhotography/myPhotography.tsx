@@ -26,7 +26,7 @@ const MyPhotography = () => {
             {/* Card 1 */}
             <div className="group overflow-hidden rounded-3xl relative shadow-2xl">
               <img
-                src="https://i.ibb.co/Y76C9Ztz/mahfuz.jpg"
+                src="https://i.ibb.co/FbkYTC3Q/Gachbari-Mosque.jpg"
                 alt="Nature"
                 className="h-[450px] w-full object-cover group-hover:scale-110 duration-700"
               />
@@ -34,9 +34,12 @@ const MyPhotography = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
 
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-3xl font-bold">My own photo</h2>
+                <h2 className="text-3xl font-bold">
+                  Gachbari Bazar Central Mosque
+                </h2>
                 <p className="text-gray-300 mt-2">
-                  A random image can sometimes become a timeless memory
+                  This beautiful mosque situated in the heart of Gachbari Bazar,
+                  Kanaighat, Sylhet, Bangladesh.
                 </p>
               </div>
             </div>
@@ -44,7 +47,7 @@ const MyPhotography = () => {
             {/* Card 2 */}
             <div className="group overflow-hidden rounded-3xl relative shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1494526585095-c41746248156"
+                src="https://i.ibb.co/mCkVv2xY/Lmc.avif"
                 alt="Urban"
                 className="h-[450px] w-full object-cover group-hover:scale-110 duration-700"
               />
@@ -52,9 +55,12 @@ const MyPhotography = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
 
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-3xl font-bold">Urban</h2>
+                <h2 className="text-3xl font-bold">East London Mosuqe</h2>
                 <p className="text-gray-300 mt-2">
-                  Modern city life and architectural stories.
+                  One of the most iconic and historic mosques in the United
+                  Kingdom, located in the heart of East London and serving
+                  thousands of worshippers and visitors from diverse
+                  communities.
                 </p>
               </div>
             </div>
@@ -62,7 +68,7 @@ const MyPhotography = () => {
             {/* Card 3 */}
             <div className="group overflow-hidden rounded-3xl relative shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
+                src="https://i.ibb.co/k62Zb9Br/Iftar-Baraka.jpg"
                 alt="Architecture"
                 className="h-[450px] w-full object-cover group-hover:scale-110 duration-700"
               />
@@ -70,9 +76,9 @@ const MyPhotography = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
 
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-3xl font-bold">Architecture</h2>
+                <h2 className="text-3xl font-bold">Iftar at a restaurant</h2>
                 <p className="text-gray-300 mt-2">
-                  Elegant structures and timeless designs.
+                  Moments of reflection and togetherness at iftar time.
                 </p>
               </div>
             </div>
