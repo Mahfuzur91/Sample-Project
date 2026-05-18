@@ -66,25 +66,11 @@ function Navbar() {
 
       <div className="collapse-content lg:hidden z-1">
         <ul className="menu">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/projects">My Projects</Link>
-          </li>
-          <li>
-            <Link href="/myPhotography">My Photography</Link>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link href={item.path}>{item.name}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

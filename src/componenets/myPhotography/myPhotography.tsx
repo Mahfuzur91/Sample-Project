@@ -26,7 +26,7 @@ const MyPhotography = () => {
             {/* Card 1 */}
             <div className="group overflow-hidden rounded-3xl relative shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                src="https://i.ibb.co/Y76C9Ztz/mahfuz.jpg"
                 alt="Nature"
                 className="h-[450px] w-full object-cover group-hover:scale-110 duration-700"
               />
@@ -34,9 +34,9 @@ const MyPhotography = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
 
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-3xl font-bold">Nature</h2>
+                <h2 className="text-3xl font-bold">My own photo</h2>
                 <p className="text-gray-300 mt-2">
-                  Capturing calmness and beauty of nature.
+                  A random image can sometimes become a timeless memory
                 </p>
               </div>
             </div>
