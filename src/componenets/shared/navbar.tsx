@@ -4,6 +4,16 @@ import Link from "next/link";
 import logo from "../../../public/assets/my pro.jpeg";
 import Image from "next/image";
 function Navbar() {
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+    { name: "My Projects", path: "/projects" },
+    { name: "My Photography", path: "/myPhotography" },
+    { name: "Blog", path: "/blog" },
+  ];
+
   return (
     <div className="max-lg:collapse bg-base-600 text-red-800  shadow-sm w-full rounded-md">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
@@ -38,25 +48,11 @@ function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/services">Services</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/projects">My Projects</Link>
-            </li>
-            <li>
-              <Link href="/myPhotography">My Photography</Link>
-            </li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link href={item.path}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="navbar-end">
@@ -71,21 +67,23 @@ function Navbar() {
       <div className="collapse-content lg:hidden z-1">
         <ul className="menu">
           <li>
-            <button>Item 1</button>
+            <Link href="/">Home</Link>
+          </li>
+
+          <li>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <button>Parent</button>
-            <ul>
-              <li>
-                <button>Submenu 1</button>
-              </li>
-              <li>
-                <button>Submenu 2</button>
-              </li>
-            </ul>
+            <Link href="/services">Services</Link>
           </li>
           <li>
-            <button>Item 3</button>
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/projects">My Projects</Link>
+          </li>
+          <li>
+            <Link href="/myPhotography">My Photography</Link>
           </li>
         </ul>
       </div>
