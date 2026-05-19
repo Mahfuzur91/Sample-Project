@@ -20,7 +20,6 @@ const Footer = () => {
             © 2026 Mahfuzur Rahman — Built with React, Next.js, Tailwind CSS &
             DaisyUI.
           </p>
-          ```
         </aside>
         <nav>
           <h6 className="footer-title">Social</h6>
